@@ -9,7 +9,7 @@ package homework.day02;
  */
 public class CharExercise {
     public static void main(String[] args) {
-        // 声明初始化五个以上的字符型变量
+        // 1.声明初始化五个以上的字符型变量
         char b = 64;
         char c = '9';
         char d = 'd';
@@ -24,7 +24,7 @@ public class CharExercise {
         System.out.println(i);// 男
     
     
-        // 声明字符型变量，演示转义符
+        // 2.声明字符型变量，演示转义符
         char a = '\'';
         System.out.println(a);// '
         char g = '\n';

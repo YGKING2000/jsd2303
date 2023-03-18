@@ -9,12 +9,12 @@ package homework.day02;
  */
 public class IntExercise {
     public static void main(String[] args) {
-        // 声明初始化两个以上整数变量，并且输出两个整数变量的除法结果
+        // 1.声明初始化两个以上整数变量，并且输出两个整数变量的除法结果
         int a = 5;
         int b = 3;
         System.out.println(a / b);// 1
     
-        // 声明两个很大的变量，然后相加，输出运算结果，测试运算溢出现象
+        // 2.声明两个很大的变量，然后相加，输出运算结果，测试运算溢出现象
         int c = 2000000000;
         int d = 2000000000;
         int e = c + d;

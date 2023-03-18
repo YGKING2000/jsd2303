@@ -9,11 +9,11 @@ package homework.day02;
  */
 public class LongExercise {
     public static void main(String[] args) {
-        // 声明初始化两个以上的长整型变量
+        // 1.声明初始化两个以上的长整型变量
         long a = 100000000000L;
         long b = 100000000000l;
     
-        // 声明变量存储几个较大数据的运算，演示: 若有可能溢出建议将L设计在第1个数字后
+        // 2.声明变量存储几个较大数据的运算，演示: 若有可能溢出建议将L设计在第1个数字后
         int c = 2000000000;
         int d = 2000000000;
         long e = c + d;
