@@ -10,5 +10,6 @@ package preview;
 public class Demo03 {
     public static void main(String[] args) {
         int[] data = new int[] {12, 65, -54, -8, 61, 23, 71, -83, 94, -36, -46};
+        
     }
 }
