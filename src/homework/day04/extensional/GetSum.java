@@ -11,8 +11,10 @@ public class GetSum {
     public static void main(String[] args) {
         // 利用循环语句while计算数字1到100的和，并输出
         int sum = 0;
-        for (int i = 1; i <= 100; i++) {
-            sum += i;
+        int count = 1;
+        while (count <= 100) {
+            sum += count;
+            count++;
         }
         System.out.println("sum = " + sum);
     }

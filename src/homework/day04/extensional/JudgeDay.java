@@ -17,7 +17,7 @@ public class JudgeDay {
         int year = scanner.nextInt();
         System.out.print("请输入月份：");
         int month = scanner.nextInt();
-        if (month != 2) {
+        /*if (month != 2) {
             switch (month) {
                 case 1:
                 case 3:
@@ -37,6 +37,42 @@ public class JudgeDay {
             } else {
                 System.out.println("公元" + year + "年2月有28天");
             }
+        }*/
+        /*switch (month) {
+            case 2:
+                if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                    System.out.println("公元" + year + "年2月有29天");
+                } else {
+                    System.out.println("公元" + year + "年2月有28天");
+                }
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                System.out.println("公元" + year + "年" + month + "月有30天");
+                break;
+            default:
+                System.out.println("公元" + year + "年" + month + "月有31天");
+        }*/
+        int days;
+        switch (month) {
+            case 2:
+                if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                    days = 29;
+                } else {
+                    days = 28;
+                }
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                days = 30;
+                break;
+            default:
+                days = 31;
         }
+        System.out.println("公元" + year + "年" + month + "月有" + days + "天");
     }
 }
