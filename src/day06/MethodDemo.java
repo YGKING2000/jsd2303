@@ -1,5 +1,7 @@
 package day06;
 
+import java.util.Scanner;
+
 /**
  * @ClassName MethodDemo
  * @Description 方法的演示
@@ -9,6 +11,7 @@ package day06;
  */
 public class MethodDemo {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         say();
         say();
     
@@ -18,7 +21,11 @@ public class MethodDemo {
         
         int result = plus(10, 12);
         System.out.println(result);
-        System.out.println(plus(3, 9));
+        // System.out.print("请输入第一个数：");
+        // int num1 = scanner.nextInt();
+        // System.out.print("请输入第二个数：");
+        // int num2 = scanner.nextInt();
+        // System.out.println(plus(num1, num2));
         
         System.out.println();
         
@@ -34,9 +41,14 @@ public class MethodDemo {
         quickSort(data, 0, data.length - 1);
         // 输出数组
         outArray(data);
-        
+    
         System.out.print("data中的最小值是：" + getMin(data));
         System.out.println("\t\tdata中的最大值是：" + getMax(data));
+    
+        int[] arr = getIntArray(20, 100, -100);
+        outArray(arr);
+        quickSort(arr, 0, arr.length - 1);
+        outArray(arr);
     }
     
     /* 1.无参无返回值 */
@@ -49,6 +61,9 @@ public class MethodDemo {
         System.out.println("大家好，" + name);
     }
     public static void say(String name, int age) {
+        System.out.println("大家好，我是" + name + "今年" + age + "岁了！");
+    }
+    public static void say(int age, String name) {
         System.out.println("大家好，我是" + name + "今年" + age + "岁了！");
     }
     // 快速排序
@@ -95,6 +110,9 @@ public class MethodDemo {
     public static int getNum() {
         return (int) (Math.random() * 201) - 100;
     }
+    public static int getNum(int max, int min) {
+        return (int) (Math.random() * (max - min + 1)) + min;
+    }
     
     /* 4.有参有返回值 */
     // 求两数之和
@@ -125,4 +143,13 @@ public class MethodDemo {
         }
         return data;
     }
+    // 随机生成一个指定长度，元素范围在指定范围之间的int型数组
+    public static int[] getIntArray(int num, int max, int min) {
+        int[] data = new int[num];
+        for (int i = 0; i < data.length; i++) {
+            data[i] = getNum(max, min);
+        }
+        return data;
+    }
+    
 }
