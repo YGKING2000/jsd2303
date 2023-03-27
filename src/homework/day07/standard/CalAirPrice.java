@@ -128,7 +128,7 @@ public class CalAirPrice {
         return finalPrice;
     }*/
     
-    /*public static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("请输入机票的原价：");
         double price = scanner.nextDouble();
@@ -177,9 +177,9 @@ public class CalAirPrice {
             }
         }
         return finalPrice;
-    }*/
+    }
     
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("请输入机票的原价：");
         double price = scanner.nextDouble();
@@ -188,13 +188,13 @@ public class CalAirPrice {
         System.out.println("舱位序号：1.头等舱\t2.商务舱\t3.经济舱");
         System.out.print("选择舱位序号：");
         int type = scanner.nextInt();
-        
+
         double finalPrice = calFinalPrice(price, month, type);
         if (finalPrice != -1) {
             System.out.println("机票的最终价格是：" + finalPrice);
         }
     }
-    
+
     public static double calFinalPrice(double price, int month, int type) {
         double discount;
         if (price < 0 || month > 12 || month < 1 || type > 3 || type < 1) {
@@ -215,5 +215,5 @@ public class CalAirPrice {
             discount += 0.2;
         }
         return price * discount;
-    }
+    }*/
 }

@@ -90,7 +90,7 @@ public class CalTotalAvg {
         return total - max - min;
     }*/
     
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         double[] scores = inputData(6);
         double avg = calAvg(scores);
         System.out.println("最终评分是：" + avg);
@@ -128,5 +128,42 @@ public class CalTotalAvg {
             }
         }
         return total - max - min;
+    }*/
+    
+    public static void main(String[] args) {
+        double[] scores = inputData(7);
+        double avg = calAvg(scores);
+        System.out.println("最终评分是：" + avg);
+    }
+    
+    public static double calAvg(double[] scores) {
+        double total = calTotal(scores);
+        return total / (scores.length - 2);
+    }
+    
+    public static double calTotal(double[] scores) {
+        double total = 0.0;
+        double max = scores[0];
+        double min = scores[0];
+        for (int i = 0; i < scores.length; i++) {
+            if (max < scores[i]) {
+                max = scores[i];
+            }
+            if (min > scores[i]) {
+                min = scores[i];
+            }
+            total += scores[i];
+        }
+        return total - max - min;
+    }
+    
+    public static double[] inputData(int length) {
+        double[] scores = new double[length];
+        Scanner scanner = new Scanner(System.in);
+        for (int i = 0; i < scores.length; i++) {
+            System.out.print("请输入第" + (i + 1) + "位评委的分数：");
+            scores[i] = scanner.nextDouble();
+        }
+        return scores;
     }
 }
