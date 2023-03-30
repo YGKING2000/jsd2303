@@ -18,10 +18,10 @@ public class RefArrayDemo {
         dogs[1].age = 16;
         dogs[2].color = "红褐色";
         dogs[3].lookHome();
-        for (int i = 0; i < dogs.length; i++) {
-            dogs[i].drink();
-            dogs[i].eat();
-            System.out.println(dogs[i].name + ", " + dogs[i].age);
+        for (Dog dog : dogs) {
+            dog.drink();
+            dog.eat();
+            System.out.println(dog.name + ", " + dog.age);
         }
     }
 }

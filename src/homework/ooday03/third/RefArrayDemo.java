@@ -1,7 +1,7 @@
 package homework.ooday03.third;
 
 /**
- * @Description
+ * @Description 引用数据类型的赋值、遍历和调用
  * @ClassName RefArrayDemo
  * @Author YGKING  e-mail:hrd18960706057@163.com
  * @Date 2023/03/28 21:31

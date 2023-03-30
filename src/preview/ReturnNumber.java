@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @Date 2023/03/18 15:38
  * @Version 1.0
  */
-public class Demo05 {
+public class ReturnNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("请输入回型数的行数：");
