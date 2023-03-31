@@ -10,6 +10,7 @@ package ooday04;
 public class Test {
     public static void main(String[] args) {
         // 演示向上造型(多态)的第1点应用:
+        
         Animal[] animals = new Animal[5];
         animals[0] = new Dog("哈哈", 4, "褐色");
         animals[1] = new Dog("小灰", 5, "灰色");

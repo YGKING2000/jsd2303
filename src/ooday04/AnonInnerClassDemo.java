@@ -25,9 +25,12 @@ public class AnonInnerClassDemo {
         
         Aoo boo = new Boo();// 相当于第2件事
         
+        int num = 379;
         Coo o3 = new Coo() {
             @Override
             void show() {
+                System.out.println(num);
+                // num++;//
                 System.out.println("show");
             }
         };

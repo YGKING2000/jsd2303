@@ -1,5 +1,6 @@
 package day07;
 
+import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -21,11 +22,11 @@ public class VerificationCode {
         System.out.print("请输入验证码：");
         while (true) {
             String userCode = scanner.next();
-            if (userCode.equals(code)) {
+            if (userCode.equalsIgnoreCase(code)) {
                 System.out.println("验证码输入正确！");
                 break;
             }
-            System.out.println("验证码错误，请重新输入：");
+            System.out.print("验证码错误，请重新输入：");
         }
         
     }

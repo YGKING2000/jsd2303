@@ -9,7 +9,7 @@ package ooday03;
  */
 public class AnimalTest {
     public static void main(String[] args) {
-        Dog dog = new Dog("小金", 3, "金色");
+        final Dog dog = new Dog("小金", 3, "金色");
         dog.eat();
         dog.drink();
         dog.lookHome();
