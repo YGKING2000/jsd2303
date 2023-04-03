@@ -1,5 +1,7 @@
 package string;
 
+import jdk.nashorn.internal.runtime.regexp.RegExp;
+
 /**
  * @Description 获取字符串指定位置的字符
  * @ClassName CharAtDemo
@@ -13,5 +15,6 @@ public class CharAtDemo {
         System.out.println(str.charAt(0));// 't'
         System.out.println(str.charAt(8));// ' '
         System.out.println(str.charAt(12));// 'J'
+        RegExp regExp;
     }
 }

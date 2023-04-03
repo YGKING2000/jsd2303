@@ -1,5 +1,7 @@
 package day07;
 
+import object.Point;
+
 import java.util.Locale;
 import java.util.Random;
 import java.util.Scanner;
@@ -28,7 +30,6 @@ public class VerificationCode {
             }
             System.out.print("验证码错误，请重新输入：");
         }
-        
     }
     
     // 1.生成指定位数的验证码的方法————直接生成char型字符
