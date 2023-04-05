@@ -9,6 +9,10 @@ package ooday03;
  */
 public class AnimalTest {
     public static void main(String[] args) {
+        // Animal animal = new Dog("", 4, "");
+        // if (animal instanceof Dog) {
+        //     Fish fish9 = (Fish) animal;
+        // }
         final Dog dog = new Dog("小金", 3, "金色");
         dog.eat();
         dog.drink();

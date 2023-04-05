@@ -9,8 +9,9 @@ package preview;
  */
 public class StringDemo {
     public static void main(String[] args) {
-        String a = null;
-        // System.out.println(a.length());
+        String s = "hello";
+        char[] c = {'h', 'e', 'l', 'l', 'o'};
+        System.out.println(s.equals(c));
         
     }
 }
